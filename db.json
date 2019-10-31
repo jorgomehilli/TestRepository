@@ -1,0 +1,9 @@
+{
+    "produktet": [
+      { "id": 1, "title": "Ranital", "cmimi": "4.00" },
+      { "title": "CoDiovan", "cmimi": "9.00" },
+      { "title": "Zyrtec", "cmimi": "6.70" }
+
+    ]
+
+}
