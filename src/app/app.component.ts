@@ -16,8 +16,6 @@ export class AppComponent implements OnInit {
   constructor(private http:HttpClient){}
 ngOnInit(){
 
-//  this.sendData();
-// this.recievePosts();
 }
 
   sendData(){

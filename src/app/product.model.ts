@@ -1,6 +1,6 @@
 
 export class ProductModel{
-    id;number;
+    id: number;
     name: string;
     cmimi: number;
 
