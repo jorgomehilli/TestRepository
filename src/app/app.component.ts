@@ -12,6 +12,7 @@ import { ProductModel } from './product.model';
 export class AppComponent implements OnInit {
 
   postData:ProductModel = new ProductModel("","Ranital","15");
+  dataFromServer: ProductModel[] = [];
 
   constructor(private http:HttpClient){}
 ngOnInit(){
@@ -24,8 +25,11 @@ ngOnInit(){
   
    
    recieveData(){
-     this.http.get('http://localhost:3000/produktet').subscribe(produktet =>{
+     this.http.get('http://localhost:3000/produktet').subscribe((produktet: ProductModel[]) =>{
+       this.dataFromServer = produktet;  
        console.log(produktet);
+     }, error => {
+        console.log(error);
      })
    }
 
