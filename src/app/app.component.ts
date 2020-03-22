@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   dataFromServer: ProductModel[] = [];
 
   constructor(private http:HttpClient){}
+  
 ngOnInit(){
 
 }
